@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Section from "./Section";
 import { motion, AnimatePresence } from "framer-motion";
-import { Send, Github, Linkedin, Mail, Instagram } from "lucide-react";
+import { Send, Github, Mail } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -32,7 +32,7 @@ export default function Contact() {
         // Create mailto link with form data
         const subject = encodeURIComponent(`Portfolio Contact: ${data.name}`);
         const body = encodeURIComponent(`Name: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`);
-        const mailtoLink = `mailto:erwin.lanzaderas@gmail.com?subject=${subject}&body=${body}`;
+        const mailtoLink = `mailto:?subject=${subject}&body=${body}`;
         
         // Open user's email client
         window.location.href = mailtoLink;
@@ -48,42 +48,28 @@ export default function Contact() {
             <div className="grid gap-12 md:grid-cols-2">
                 <div className="space-y-12">
                     <div className="space-y-4">
-                        <h3 className="text-3xl font-bold">Let's build something new.</h3>
+                        <h3 className="text-3xl font-bold">Let's design something meaningful.</h3>
                         <p className="text-lg text-foreground/60">
-                            I'm always open to discussing new projects, exploring technologies or
-                            opportunities to be part of your vision.
+                            I'm always open to discussing UI/UX projects, mobile product design,
+                            or opportunities to shape your next digital experience.
                         </p>
                     </div>
 
                     <div className="space-y-6">
                         <div className="flex items-center gap-6">
                             <a
-                                href="https://github.com/kaya0s"
+                                href="https://github.com/kateyeng"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="group flex h-12 w-12 items-center justify-center border border-foreground/10 transition-colors hover:border-accent"
+                                aria-label="GitHub profile"
                             >
                                 <Github size={20} className="text-foreground/40 transition-colors group-hover:text-accent" />
                             </a>
                             <a
-                                href="https://www.linkedin.com/in/erwin-lanzaderas-263812312/"
-                                target="_blank"
-                                rel="noopener noreferrer"
+                                href="mailto:"
                                 className="group flex h-12 w-12 items-center justify-center border border-foreground/10 transition-colors hover:border-accent"
-                            >
-                                <Linkedin size={20} className="text-foreground/40 transition-colors group-hover:text-accent" />
-                            </a>
-                            <a
-                                href="https://www.instagram.com/yaosthegreat/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="group flex h-12 w-12 items-center justify-center border border-foreground/10 transition-colors hover:border-accent"
-                            >
-                                <Instagram size={20} className="text-foreground/40 transition-colors group-hover:text-accent" />
-                            </a>
-                            <a
-                                href="mailto:erwin.lanzaderas@gmail.com"
-                                className="group flex h-12 w-12 items-center justify-center border border-foreground/10 transition-colors hover:border-accent"
+                                aria-label="Send email"
                             >
                                 <Mail size={20} className="text-foreground/40 transition-colors group-hover:text-accent" />
                             </a>

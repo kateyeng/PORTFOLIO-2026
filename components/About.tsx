@@ -19,14 +19,14 @@ export default function About() {
             <div ref={ref} className="grid gap-12 lg:grid-cols-12 items-center">
                 <div className="lg:col-span-7 space-y-10">
                     <p className="text-2xl md:text-4xl leading-[1.3] text-foreground/90 font-light tracking-tight">
-                        I am a developer who loves <span className="text-accent italic">creating anything new</span> and exploring technologies.
+                        I am a UI/UX designer who loves <span className="text-accent italic">shaping meaningful experiences</span> through research, wireframes, and visual craft.
                     </p>
                     <div className="flex gap-12">
                         <div className="space-y-6 flex-1">
                             <p className="text-sm md:text-base leading-relaxed text-foreground/60 font-light">
-                                My journey is driven by a profound curiosity for how things work and a passion for building robust,
-                                scalable systems. I believe that the best solutions come from a mix of technical rigor and a
-                                constant drive to explore the unknown. I'm always looking for the next challenge to master.
+                                My journey is driven by empathy for users and a passion for clear, beautiful interfaces. I design
+                                mobile and web experiences—from user flows and prototypes to high-fidelity UI—so products feel
+                                effortless to use. Recent work includes the Business Tracker Android app and its launch experience.
                             </p>
                         </div>
                         <div className="space-y-6 flex-1 hidden md:block border-l border-foreground/5 pl-12">

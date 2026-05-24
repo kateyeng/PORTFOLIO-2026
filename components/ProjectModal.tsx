@@ -13,6 +13,8 @@ interface Project {
     image: string;
     tech: string[];
     features: string[];
+    liveUrl?: string;
+    githubUrl?: string;
 }
 
 interface ProjectModalProps {
@@ -266,20 +268,30 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                                     </div>
                                 </div>
 
-                                <div className="flex flex-col sm:flex-row gap-4 pt-8 border-t border-foreground/5">
-                                    <a
-                                        href="#"
-                                        className="flex-1 group flex items-center justify-center gap-3 bg-foreground py-4 text-[10px] font-black uppercase tracking-widest text-background hover:bg-accent transition-colors"
-                                    >
-                                        Live Preview <ExternalLink size={14} />
-                                    </a>
-                                    <a
-                                        href="#"
-                                        className="flex-1 flex items-center justify-center gap-3 border border-foreground/10 py-4 text-[10px] font-black uppercase tracking-widest hover:border-accent hover:text-accent transition-colors"
-                                    >
-                                        Source Code <Github size={16} />
-                                    </a>
-                                </div>
+                                {(project.liveUrl || project.githubUrl) && (
+                                    <div className="flex flex-col sm:flex-row gap-4 pt-8 border-t border-foreground/5">
+                                        {project.liveUrl && (
+                                            <a
+                                                href={project.liveUrl}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="flex-1 group flex items-center justify-center gap-3 bg-foreground py-4 text-[10px] font-black uppercase tracking-widest text-background hover:bg-accent transition-colors"
+                                            >
+                                                Live Preview <ExternalLink size={14} />
+                                            </a>
+                                        )}
+                                        {project.githubUrl && (
+                                            <a
+                                                href={project.githubUrl}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className={`flex items-center justify-center gap-3 border border-foreground/10 py-4 text-[10px] font-black uppercase tracking-widest hover:border-accent hover:text-accent transition-colors ${project.liveUrl ? "flex-1" : "flex-1 w-full"}`}
+                                            >
+                                                GitHub <Github size={16} />
+                                            </a>
+                                        )}
+                                    </div>
+                                )}
                             </div>
                         </div>
                     </motion.div>

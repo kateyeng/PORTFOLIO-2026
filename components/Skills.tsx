@@ -8,24 +8,24 @@ import { ArrowUpRight, Cpu, Eye, Layers } from "lucide-react";
 const skillCategories = [
     {
         id: "01",
-        title: "Web Systems",
+        title: "UI Design",
         icon: <Layers size={20} />,
-        description: "Building high-performance, responsive digital ecosystems with a focus on core logic and speed.",
-        skills: ["React / Next.js", "TypeScript", "Tailwind CSS", "RESTful API", "Zustand"],
+        description: "Crafting visual systems with clear hierarchy, typography, and color that feel cohesive across screens.",
+        skills: ["Figma", "Visual Design", "Typography", "Design Systems", "Responsive Layout"],
     },
     {
         id: "02",
-        title: "Machine Learning",
+        title: "UX Strategy",
         icon: <Eye size={20} />,
-        description: "Specializing in computer vision applications using YOLO and Python-based notebook development.",
-        skills: ["Python", "YOLO", "Computer Vision", "Jupyter Notebooks", "OpenCV"],
+        description: "Mapping user needs into flows, wireframes, and prototypes that validate ideas before build.",
+        skills: ["User Research", "Wireframing", "User Flows", "Prototyping", "Usability Testing"],
     },
     {
         id: "03",
-        title: "Infrastructure",
+        title: "Mobile Product",
         icon: <Cpu size={20} />,
-        description: "Architecting the invisible backbone that keeps applications scalable and reliable.",
-        skills: ["AWS", "Docker", "PostgreSQL", "Redis", "Microservices"],
+        description: "Designing mobile-first experiences—from in-app UI to marketing pages that match the product.",
+        skills: ["Mobile UI", "Landing Pages", "Design Handoff", "Component Libraries", "Accessibility"],
     },
 ];
 
@@ -125,12 +125,12 @@ export default function Skills() {
             {/* Bottom Footer Callout */}
             <div className="mt-20 flex flex-col md:flex-row items-end justify-between gap-12 border-l-2 border-accent/20 pl-8">
                 <p className="max-w-xl text-lg md:text-xl text-foreground/60 font-light leading-relaxed">
-                    My stack is ever-evolving, driven by a deep-seated curiosity for the <span className="text-foreground font-black uppercase">new</span>.
-                    I don't just use tools; I architect systems that bridge the gap between imagination and technical reality.
+                    My toolkit grows with every product, driven by empathy for the <span className="text-foreground font-black uppercase">user</span>.
+                    I don't just make screens look good—I design journeys that feel clear, purposeful, and delightful to use.
                 </p>
                 <div className="flex flex-col items-end">
                     <span className="text-[10px] font-black uppercase tracking-[0.5em] text-accent mb-2">Philosophy</span>
-                    <span className="text-2xl font-black italic tracking-tighter">Experiment & Build</span>
+                    <span className="text-2xl font-black italic tracking-tighter">Research & Refine</span>
                 </div>
             </div>
         </Section>

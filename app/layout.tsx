@@ -17,8 +17,8 @@ const shipporiMincho = Shippori_Mincho({
 });
 
 export const metadata: Metadata = {
-  title: "kayaos | Portfolio",
-  description: "Modern, scroll-driven portfolio of kayaos. Specialized in Full Stack Development and exploring technologies.",
+  title: "KATE | Portfolio",
+  description: "Portfolio of KATE — UI/UX designer crafting mobile and web experiences. Featuring Business Tracker and product design work.",
 };
 
 export default function RootLayout({

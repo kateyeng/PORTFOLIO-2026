@@ -8,7 +8,7 @@ export default function Footer() {
             <div className="container mx-auto px-8 md:px-16 lg:px-32">
                 <div className="flex flex-col items-center gap-4 text-center">
                     <span className="font-serif text-xl font-bold tracking-tighter">
-                        kaya<span className="text-accent">0</span>s
+                        KATE CASTRO
                     </span>
                     <p className="text-[10px] uppercase tracking-[0.2em] text-foreground/30">
                         © {currentYear} All Rights Reserved

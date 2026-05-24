@@ -25,12 +25,12 @@ export default function Hero() {
 
             {/* Background Name (Behind Photo) */}
             <motion.div
-                layoutId="kayaos-branding"
+                layoutId="KATE-branding"
                 style={{ opacity: useTransform(scrollYProgress, [0, 0.3], [0.03, 0]), scale }}
                 className="absolute inset-0 flex items-center justify-center pointer-events-none z-0"
             >
                 <span className="text-[25vw] font-black tracking-tighter uppercase text-foreground">
-                    KAYAOS
+                    KATE CASTRO
                 </span>
             </motion.div>
 
@@ -44,20 +44,22 @@ export default function Hero() {
                     <div className="space-y-8">
                         <div className="inline-flex items-center gap-4">
                             <span className="h-px w-12 bg-accent" />
-                            <span className="text-[10px] font-black uppercase tracking-[0.5em] text-accent">Full Stack Developer</span>
+                            <span className="text-[10px] font-black uppercase tracking-[0.5em] text-accent">
+                                UI/UX Designer · Bukidnon, PH
+                            </span>
                         </div>
 
                         <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter leading-[0.9] uppercase">
-                            Creating <br />
-                            <span className="text-outline-accent text-transparent">Anything</span> <br />
-                            New.
+                            Design <br />
+                            <span className="text-outline-accent text-transparent">Feels.</span> <br />
+                            Works.
                         </h1>
 
                         <p className="max-w-md text-sm md:text-base leading-relaxed text-foreground/50 font-light tracking-wide">
-                            I am kayaos, a developer who loves creating anything new and exploring technologies.
-                            Based in BUKIDNON, PHILIPPINES, I specialize in building high-performance systems and modern digital solutions.
+                            Hi, I'm Kate — I design interfaces that feel effortless to use. 
+                            From early wireframes to pixel-perfect screens, I close the gap 
+                            between what users need and what products actually deliver.
                         </p>
-
                     </div>
                 </motion.div>
 
@@ -76,7 +78,7 @@ export default function Hero() {
                         >
                             <img
                                 src="/images/profile.jpg"
-                                alt="kayaos"
+                                alt="KATE"
                                 className="h-full w-full object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-1000"
                             />
                         </motion.div>

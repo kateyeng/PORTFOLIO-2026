@@ -11,8 +11,8 @@ export default function CVSection() {
                 <div className="max-w-2xl text-center">
                     <p className="text-base sm:text-lg leading-relaxed text-foreground/70">
                         A comprehensive record of my professional journey, including education,
-                        key roles, and notable contributions to the field of software engineering
-                        and artificial intelligence.
+                        key roles, and notable contributions in UI/UX design, product design,
+                        and user-centered digital experiences.
                     </p>
                 </div>
 
@@ -31,7 +31,7 @@ export default function CVSection() {
                     </motion.a>
                     <motion.a
                         href="/cv/my_CV.pdf"
-                        download="kayaos_CV.pdf"
+                        download="KATE_CV.pdf"
                         whileHover={{ scale: 1.02, backgroundColor: "rgba(var(--foreground), 0.05)" }}
                         whileTap={{ scale: 0.98 }}
                         className="flex items-center justify-center gap-3 border border-foreground/10 py-3 sm:py-4 text-[11px] sm:text-sm font-semibold transition-colors"
