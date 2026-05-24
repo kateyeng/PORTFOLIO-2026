@@ -18,7 +18,7 @@ export default function CVSection() {
 
                 <div className="grid w-full max-w-md gap-3 sm:max-w-lg sm:gap-4 sm:grid-cols-2">
                     <motion.a
-                        href="/cv/my_CV.pdf"
+                        href="/cv/Castro_CV.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         whileHover={{ scale: 1.02 }}
@@ -30,8 +30,8 @@ export default function CVSection() {
                         View CV
                     </motion.a>
                     <motion.a
-                        href="/cv/my_CV.pdf"
-                        download="KATE_CV.pdf"
+                        href="/cv/Castro_CV.pdf"
+                        download="Castro_CV.pdf"
                         whileHover={{ scale: 1.02, backgroundColor: "rgba(var(--foreground), 0.05)" }}
                         whileTap={{ scale: 0.98 }}
                         className="flex items-center justify-center gap-3 border border-foreground/10 py-3 sm:py-4 text-[11px] sm:text-sm font-semibold transition-colors"
